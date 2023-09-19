@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+nav{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .nav-side-routes{
+        display: flex;
+        gap: 33px;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                font-family: 'Barlow', sans-serif;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.92px;
+                color: #83888F;
+            }
+        }
+    }
+    .hamburger{
+        display: none;
+        font-size: 30px;
+    }
+    .navbarMobil{
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 0;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            font-family: 'Barlow', sans-serif;
+            font-size: 22px;
+            line-height: 15px;
+            letter-spacing: 0.92px;
+            color: #83888F; 
+            margin-top: 20px;
+        }
+        .closeButton{
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    nav{
+        width: 100%;
+        .nav-side-routes{
+            li{
+                display: none;
+            }
+        }
+        .hamburger{
+            display: block;
+        }
+        .navbarMobil{
+            display: block;
+            a{
+                display: block;
+            }
+        }
+    }
+}

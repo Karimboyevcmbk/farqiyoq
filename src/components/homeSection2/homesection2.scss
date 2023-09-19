@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz,wght@9..144,900&display=swap');
+.HomeSection2{
+    background-image: url("../../assets/HomeSectionImg2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1111px;
+    padding-top: 126px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .HomeSection2Child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 255px;
+        strong{
+            font-size: 24px;
+            font-family: 'Fraunces', serif;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            color: #333D4B;
+            font-family: 'Barlow',sans-serif;
+
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .HomeSection2{
+        gap: 40px;
+        flex-direction: column;
+    }
+}

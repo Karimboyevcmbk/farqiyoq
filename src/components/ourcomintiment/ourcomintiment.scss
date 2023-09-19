@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz,wght@9..144,900&display=swap');
+.ourComintiment{
+    max-width: 1110px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 168px;
+    gap: 5px;
+    h2{
+        font-family: 'Fraunces',sans-serif;
+        font-size: 40px;
+        color: #333D4B;
+        margin-bottom: 32px;
+    }
+    p{
+        font-family: 'Barlow',sans-serif;
+        font-size: 16px;
+        color: #333D4B;
+        max-width: 540px;
+    }
+}
+@media only screen and (max-width:900px){
+    .ourComintiment{
+        flex-direction: column;
+        height: auto;
+        img{
+            width: 327px;
+        }
+        h2{
+            text-align: center;
+            margin-top: 40px;
+        }
+        p{
+            text-align: center;
+            max-width: 400px;
+        }
+    }
+}

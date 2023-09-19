@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz,wght@9..144,900&display=swap');
+.HomeBanner{
+    height: 600px;
+    background-image: url("../../assets/homeBanner.png");
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 86px;
+    .homeBannerTitle{
+        max-width: 500px;
+        h1{
+            color: #fff;
+            font-family: 'Fraunces', sans-serif;
+            font-size: 72px;
+        }
+        p{
+            color: #d4d3d2;
+            font-family: 'Barlow',sans-serif;
+            font-size: 16px;
+            margin-top: 32px;
+            max-width: 440px;
+            line-height: 25px;
+            margin-bottom: 56px;
+        }
+        a{
+            button{
+                padding: 15px 31px;
+                background-color: #66D2CF;
+                cursor: pointer;
+                border: none;
+                text-decoration: none;
+                font-family: 'Fraunces', sans-serif;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .HomeBanner{
+        width: 100%;
+        padding: 0 20px;
+        height: 500px;
+        background-image: url("../../assets/HomeBanner2.jpg");
+        .homeBannerTitle{
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}

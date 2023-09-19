@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz,wght@9..144,900&display=swap');
+.homeSection3{
+    padding: 0 80px;
+    h3{
+        font-family: 'Fraunces', sans-serif;
+        color: #83888F;
+        font-size: 24px;
+        margin-bottom: 80px;
+    }
+    .homeSection3__rasm{
+        height: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 67px;
+        .dumaloq{
+            width: 31px;
+            height: 31px;
+            border: 2px solid #0E8784;
+            border-radius: 50%;
+            z-index: 2;
+            background-color: #fff;
+        }
+        .line{
+            position: absolute;
+            top: 15px;
+            border: 2px solid #FDD6BA;
+            width: 100%;
+        }
+    }
+    .homeSection3__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .homeSection3__title-child{
+            max-width: 285px;
+            p{
+                font-size: 72px;
+                font-family: 'Fraunces', sans-serif;
+                color: #FDD6BA;
+            }
+            h4{
+                font-family: 'Fraunces', sans-serif;
+                font-size: 32px;
+                color: #333D4B;
+                max-width: 240px;
+                line-height: 36px;
+                margin: 40px 0;
+            }
+            span{
+                font-family: 'Barlow',sans-serif;
+                font-size: 16px;
+                color: #333D4B;
+            }
+        }
+    }
+    .bilmadm{
+        margin-top: 64px;
+        margin-bottom: 200px;
+        cursor: pointer;
+        padding: 15px 31px;
+        background-color: #66D2CF;
+        color: #fff;
+        font-family: 'Fraunces', sans-serif;
+        border-radius: 5px;
+        border: none;
+    }
+}
+@media only screen and (max-width:768px){
+    .homeSection3{
+        padding: 0 10px;
+        h3{
+            text-align: center;
+        }
+        .homeSection3__title{
+            flex-direction: column;
+            gap: 56px;
+            .homeSection3__title-child{
+                text-align: center;
+            }
+        }
+        .homeSection3__rasm{
+            display: none;
+        }
+        .bilmadm{
+            margin: 79px auto;
+            margin-bottom: 120px;
+        }
+    }
+}
